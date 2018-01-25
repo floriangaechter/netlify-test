@@ -3,6 +3,7 @@ backend:
   repo: floriangaechter/netlify-test
 
 media_folder: static/assets
+public_folder: /assets
 
 collections:
   - name: blog

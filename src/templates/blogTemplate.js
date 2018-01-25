@@ -1,4 +1,5 @@
 import React from "react"
+import Img from "gatsby-image"
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -10,9 +11,14 @@ export default function Template({
             <div className="blog-post">
                 <h1>{frontmatter.title}</h1>
                 <h2>{frontmatter.date}</h2>
+                <img
+                    style={{ borderRadius: '5px' }}
+                    src={frontmatter.main}
+                    alt=""
+                />
                 <div
                     className="blog-post-content"
-                    dangerouslySetInnerHTML={{ __html: html }}
+                    dangerouslySetInnerHTML={{ __html: frontmatter.content }}
                 />
             </div>
         </div>
@@ -27,6 +33,8 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
+        main
+        content
       }
     }
   }
