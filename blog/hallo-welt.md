@@ -2,7 +2,7 @@
 path: /test
 date: 2018-01-25T09:08:36.356Z
 title: Hallo Welt
-main: /assets/dscf3011.jpg
+image: /assets/dscf3011.jpg
 content: >-
   Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere
   erat a ante venenatis dapibus posuere velit aliquet. Cras justo odio, dapibus
